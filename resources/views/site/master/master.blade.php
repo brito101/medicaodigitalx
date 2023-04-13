@@ -345,10 +345,10 @@
         </label>
     </div>
 
-    <div id="new-phones-modal" class="white-popup-block mfp-hide">
+    {{-- <div id="new-phones-modal" class="white-popup-block mfp-hide">
         <img src="{{ asset('img/phone-modal.webp') }}" title="Novos telefones de contato"
             alt="Novos telefones de contato">
-    </div>
+    </div> --}}
 
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
@@ -364,7 +364,7 @@
         <script src="{{ asset('js/goto.js') }}"></script>
         @yield('custom_js')
     @endif
-    <script src="{{ asset('/js/new-phones-modal.js') }}"></script>
+    {{-- <script src="{{ asset('/js/new-phones-modal.js') }}"></script> --}}
 </body>
 
 </html>
