@@ -1,5 +1,5 @@
 <!--
-@born Ago 20, 2022
+@born April 22, 2023
 @author Rodrigo Brito <contato@rodrigobrito.dev.br>
 -->
 
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6">
+                {{-- <div class="col-lg-5 col-md-6">
                     <div class="top-header-right">
                         <div class="top-header-social top-header-social-bg">
                             <ul>
@@ -55,7 +55,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </header>
@@ -64,16 +64,19 @@
     <div class="navbar-area">
         <div class="mobile-nav">
             <a href="{{ route('site.home') }}" class="logo text-primary">
-                <img src="{{ asset('img/logo.webp') }}" width="200" height="37" alt="{{ env('APP_NAME') }}">
+                <img src="{{ asset('img/logo.png') }}" width="50" height="50" alt="{{ env('APP_NAME') }}"
+                    style="margin-top: 10px;">
             </a>
         </div>
 
         <div class="main-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light ">
-                    <a class="navbar-brand" href="{{ route('site.home') }}">
-                        <img src="{{ asset('img/logo.webp') }}" alt="{{ env('APP_NAME') }}" width="300"
-                            height="55">
+                    <a class="navbar-brand" href="{{ route('site.home') }}" style="display: flex;">
+                        <img src="{{ asset('img/logo.png') }}" alt="{{ env('APP_NAME') }}" width="50"
+                            height="50">
+                        <h1 style="text-transform: none; margin-top: 5px; margin-left: 10px; color: #062174;">Medição
+                            Digital</h1>
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
@@ -83,13 +86,13 @@
                                     Home
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a href="{{ Route::currentRouteName() == 'site.home' ? '#' : route('site.home') . '/#company' }}"
                                     class="nav-link"
                                     {{ Route::currentRouteName() == 'site.home' ? 'data-go=#company' : '' }}>
                                     Nossa Empresa
                                 </a>
-                            </li>
+                            </li> --}}
                             <li class="nav-item">
                                 <a href="#"
                                     class="nav-link {{ Route::currentRouteName() == 'site.service.airBlock' ||
@@ -130,12 +133,12 @@
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a href="{{ route('site.posts') }}"
                                     class="nav-link {{ Route::currentRouteName() == 'site.posts' || Route::currentRouteName() == 'site.post' ? 'active' : '' }}">
                                     Blog
                                 </a>
-                            </li>
+                            </li> --}}
 
                             <li class="nav-item">
                                 <a href="{{ route('site.contact') }}"
@@ -171,11 +174,11 @@
                         <div class="footer-widget">
                             <div class="footer-logo">
                                 <a href="{{ route('site.home') }}">
-                                    <img src="{{ asset('img/logo-269x55.webp') }}" width="269" height="55"
-                                        alt="{{ env('APP_NAME') }}">
+                                    <img src="{{ asset('img/favicon.png') }}" width="80" height="80"
+                                        alt="{{ env('APP_NAME') }}" title="Medição Digital">
                                 </a>
                             </div>
-                            <h2 class="text-white">Nossa Missão</h2>
+                            <h3 class="text-white">Nossa Missão</h3>
                             <p>Promover a Justiça Social, onde cada consumidor tenha o direito de pagar pelo que
                                 consome, contribuindo assim com o ecosistema, gerando economia dos recursos naturais,
                                 promovendo o consumo consciente, trabalhando para cada dia mais ter um planeta
@@ -186,12 +189,12 @@
                         <div class="footer-widget ps-md-5">
                             <h3>Links</h3>
                             <ul class="footer-list">
-                                <li>
+                                {{-- <li>
                                     <a href="{{ route('site.posts') }}" title="Blog">
                                         <i class='bx bx-chevron-right'></i>
                                         Blog
                                     </a>
-                                </li>
+                                </li> --}}
                                 <li>
                                     <a href="{{ route('site.contact') }}" title="Contato">
                                         <i class='bx bx-chevron-right'></i>
@@ -310,28 +313,28 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li>
+                                {{-- <li>
                                     <i class='bx bxl-instagram'></i>
                                     <div class="content">
                                         <a href="https://www.instagram.com/acquaxdobrasil/" target="_blank"
                                             rel="noreferrer">
-                                            Acqua X no Instagram
+                                            Medição Digital X no Instagram
                                         </a>
                                     </div>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    {{-- <div class="col-12 col-md-6">
                         <img src="{{ asset('img/awards-561x118.webp') }}" width="561" alt="Nosso Prêmios">
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
         <div class="copy-right-area">
             <div class="copy-right-text">
                 <p>
-                    Copyright © 2022-{{ date('Y') }} {{ env('APP_NAME') }}. Todos os direitos reservados.
+                    Copyright © 2023-{{ date('Y') }} {{ env('APP_NAME') }}. Todos os direitos reservados.
                     <a href="https://rodrigobrito.dev.br" target="_blank">Desenvolvido por Rodrigo Brito</a>
                 </p>
             </div>
@@ -360,10 +363,10 @@
     <script src="{{ asset('js/form-validator.min.js') }}"></script>
     <script src="{{ asset('js/contact-form-script.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
-    @if (Route::currentRouteName() == 'site.home')
+    {{-- @if (Route::currentRouteName() == 'site.home')
         <script src="{{ asset('js/goto.js') }}"></script>
         @yield('custom_js')
-    @endif
+    @endif --}}
     {{-- <script src="{{ asset('/js/new-phones-modal.js') }}"></script> --}}
 </body>
 

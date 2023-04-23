@@ -13,8 +13,8 @@ class ContactController extends Controller
 {
     public function index()
     {
-        Meta::set('title', 'Acqua X do Brasil - Contato');
-        Meta::set('description', 'Acqua X do Brasil - Entre em contato conosco.');
+        Meta::set('title', 'Medição Digital - Contato');
+        Meta::set('description', 'Medição Digital- Entre em contato conosco.');
         Meta::set('robots', 'index,follow');
         Meta::set('image', asset('img/share.png'));
         Meta::set('canonical', env('APP_URL'));

@@ -712,7 +712,12 @@ Navbar Area
     top: -10px;
 }
 
-.main-nav .nav-side .nav-side-item .search-side-widget .search-side-form .form-control {
+.main-nav
+    .nav-side
+    .nav-side-item
+    .search-side-widget
+    .search-side-form
+    .form-control {
     height: 45px;
     background-color: #f8f8f8;
     padding: 10px 20px;
@@ -721,13 +726,23 @@ Navbar Area
     border: none;
 }
 
-.main-nav .nav-side .nav-side-item .search-side-widget .search-side-form .form-control:focus {
+.main-nav
+    .nav-side
+    .nav-side-item
+    .search-side-widget
+    .search-side-form
+    .form-control:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
     outline: 0;
 }
 
-.main-nav .nav-side .nav-side-item .search-side-widget .search-side-form button {
+.main-nav
+    .nav-side
+    .nav-side-item
+    .search-side-widget
+    .search-side-form
+    button {
     position: absolute;
     top: 3px;
     right: 3px;
@@ -741,13 +756,24 @@ Navbar Area
     border-radius: 50px;
 }
 
-.main-nav .nav-side .nav-side-item .search-side-widget .search-side-form button i {
+.main-nav
+    .nav-side
+    .nav-side-item
+    .search-side-widget
+    .search-side-form
+    button
+    i {
     color: #ffffff;
     position: relative;
     top: 1.9px;
 }
 
-.main-nav .nav-side .nav-side-item .search-side-widget .search-side-form button:hover {
+.main-nav
+    .nav-side
+    .nav-side-item
+    .search-side-widget
+    .search-side-form
+    button:hover {
     background-color: $color-2;
 }
 
@@ -862,7 +888,12 @@ Navbar Area
     top: 5px;
 }
 
-.side-nav-responsive .side-nav-inner .side-nav .side-nav-item .search-box:hover i {
+.side-nav-responsive
+    .side-nav-inner
+    .side-nav
+    .side-nav-item
+    .search-box:hover
+    i {
     color: $color-2;
 }
 
@@ -872,7 +903,12 @@ Navbar Area
     top: 5px;
 }
 
-.side-nav-responsive .side-nav-inner .side-nav .side-nav-item .get-btn .default-btn {
+.side-nav-responsive
+    .side-nav-inner
+    .side-nav
+    .side-nav-item
+    .get-btn
+    .default-btn {
     padding: 7px 15px;
     background-color: #ffffff;
     color: #252525;
@@ -897,10 +933,10 @@ Navbar Area
     background-image: unset;
 }
 
-.sticky-nav .main-nav img {
-    width: 200px;
-    height: auto;
-}
+// .sticky-nav .main-nav img {
+//     width: 200px;
+//     height: auto;
+// }
 
 .sticky-nav .mobile-nav a {
     top: 0;
@@ -1063,7 +1099,10 @@ Search Overlay CSS
     outline: none;
 }
 
-.search-overlay .search-form form .input-search:focus::-webkit-input-placeholder {
+.search-overlay
+    .search-form
+    form
+    .input-search:focus::-webkit-input-placeholder {
     color: transparent;
 }
 
@@ -1314,7 +1353,13 @@ Main Banner Area
     right: 0;
     width: 100%;
     height: 100%;
-    background-image: -webkit-gradient(linear, left top, right top, from(#252525bf), to(#25252500));
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#252525bf),
+        to(#25252500)
+    );
     background-image: linear-gradient(to right, #252525bf, #25252500);
 }
 
@@ -4431,7 +4476,13 @@ Clients Area
     height: 90%;
     -webkit-animation: border-transform 15s infinite ease-in-out;
     animation: border-transform 15s infinite ease-in-out;
-    background-image: -webkit-gradient(linear, left top, left bottom, from($color-2), to(#070b3b));
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from($color-2),
+        to(#070b3b)
+    );
     background-image: linear-gradient($color-2, #070b3b);
 }
 
@@ -4992,7 +5043,13 @@ Blog Area End
     height: 70px;
     line-height: 70px;
     color: #ffffff;
-    background-image: -webkit-gradient(linear, left top, right top, from(#070f60), to($color-2));
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#070f60),
+        to($color-2)
+    );
     background-image: linear-gradient(to right, #070f60, $color-2);
     text-align: center;
     border-radius: 50px;
@@ -5669,7 +5726,13 @@ Faq Area
     content: "\eb8b";
 }
 
-.faq-content .faq-accordion .accordion .accordion-title.active i .accordion-content p {
+.faq-content
+    .faq-accordion
+    .accordion
+    .accordion-title.active
+    i
+    .accordion-content
+    p {
     margin-top: -5px;
 }
 
@@ -6219,7 +6282,10 @@ Coming Soon Area
     color: #5d5d5d;
 }
 
-.coming-soon-area .coming-soon-content .newsletter-form .input-newsletter:focus {
+.coming-soon-area
+    .coming-soon-content
+    .newsletter-form
+    .input-newsletter:focus {
     border-color: #252525;
 }
 
@@ -6305,7 +6371,7 @@ Map Area
 Map Area End
 ====================================*/
 .footer-bg {
-    background-color: #070b3b;
+    background-color: #445797;
 }
 
 .footer-widget {
@@ -6316,7 +6382,7 @@ Map Area End
     margin-bottom: 20px;
     position: relative;
     top: -5px;
-    background-color: #fff;
+    // background-color: #fff;
 }
 
 .footer-widget h3 {
@@ -6767,7 +6833,13 @@ Home Page Six Css
     height: 90%;
     -webkit-animation: border-transform 15s infinite ease-in-out;
     animation: border-transform 15s infinite ease-in-out;
-    background-image: -webkit-gradient(linear, left top, left bottom, from($color-2), to(#070b3b));
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from($color-2),
+        to(#070b3b)
+    );
     background-image: linear-gradient($color-2, #070b3b);
 }
 
@@ -7051,7 +7123,8 @@ Home Page Six Css End
         transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
     }
     100% {
-        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg)
+            rotateY(-179.9deg);
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
 }
@@ -7066,7 +7139,8 @@ Home Page Six Css End
         transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
     }
     100% {
-        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg)
+            rotateY(-179.9deg);
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
 }

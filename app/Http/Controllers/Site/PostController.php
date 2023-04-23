@@ -11,8 +11,8 @@ class PostController extends Controller
 {
     public function index()
     {
-        Meta::set('title', 'Acqua X do Brasil - Blog');
-        Meta::set('description', 'Acqua X do Brasil - Confira nossas dicas e acompanhe nosso trabalho alinhado com sustentabilidade.');
+        Meta::set('title', 'Medição Digital - Blog');
+        Meta::set('description', 'Medição Digital - Confira nossas dicas e acompanhe nosso trabalho alinhado com sustentabilidade.');
         Meta::set('robots', 'index,follow');
         Meta::set('image', asset('img/share.png'));
         Meta::set('canonical', env('APP_URL'));
@@ -33,7 +33,7 @@ class PostController extends Controller
 
         $posts = Post::whereNotIn('id', [$post->id])->where('status', 'Publicado')->inRandomOrder()->limit(3)->get();
 
-        Meta::set('title', "Acqua X do Brasil - {$post->title}");
+        Meta::set('title', "Medição Digital - {$post->title}");
         Meta::set('description', $post->headline);
         Meta::set('robots', 'index,follow');
         Meta::set('image', $post->cover ? url('storage/posts/' . $post->cover) : asset('img/share.jpg'));

@@ -11,14 +11,15 @@ class HomeController extends Controller
 {
     public function index()
     {
-        Meta::set('title', 'Acqua X do Brasil - Individualização e Medição de Água');
-        Meta::set('description', 'Acqua X do Brasil - Garantimos o futuro trabalhando com sustentabilidade.');
+        Meta::set('title', 'Medição Digital - A medição em suas mãos!');
+        Meta::set('description', 'Medição Digital - A medição em suas mãos!');
         Meta::set('robots', 'index,follow');
         Meta::set('image', asset('img/share.png'));
         Meta::set('canonical', env('APP_URL'));
 
-        $posts = Post::where('status', 'Publicado')
-            ->orderBy('created_at', 'desc')->limit(3)->get();
-        return view('site.home.index', compact('posts'));
+        // $posts = Post::where('status', 'Publicado')
+        //     ->orderBy('created_at', 'desc')->limit(3)->get();
+        // return view('site.home.index', compact('posts'));
+        return view('site.home.index');
     }
 }

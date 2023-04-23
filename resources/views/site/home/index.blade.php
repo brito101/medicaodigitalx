@@ -65,9 +65,9 @@
     <section class="work-process-area-two pt-70 pb-70" id="company">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-                <img src="{{ asset('img/logo-776x143.webp') }}"
-                    alt="Acqua X do Brasil - Garantimos o futuro trabalhando com sustentabilidade" style="max-width: 776px;"
-                    width="776">
+                {{-- <img src="{{ asset('img/logo-776x143.webp') }}"
+                    alt="Medição Digital - Garantimos o futuro trabalhando com sustentabilidade" style="max-width: 776px;"
+                    width="776"> --}}
                 <div class="col-lg-7 pt-2">
                     <div class="row d-flex align-items-end">
                         <div class="col-lg-6 col-sm-6">
@@ -103,7 +103,7 @@
                             <p>A mais de 15 anos no mercado, contamos com uma equipe especializada em prestar serviços de
                                 alta qualidade, segurança, com o melhor suporte e atendimento do país.
                             </p>
-                            <p>Em constante processo de inovação, a AcquaX do Brasil desenvolve projetos com a mais alta
+                            <p>Em constante processo de inovação, a Medição Digital desenvolve projetos com a mais alta
                                 tecnologia para garantir a eficiência, praticidade e modernidade aos nossos clientes.
                             </p>
                         </div>
@@ -117,7 +117,7 @@
     <section class="services-area pt-100 pb-70">
         <div class="container">
             <div class="section-title text-center">
-                <h2>Conheça os Serviços da Acqua X do Brasil</h2>
+                <h2>Conheça os Serviços da Medição Digital</h2>
                 <p>Todos os nossos serviços são realizados por profissionais especializados e com tecnologia de ponta</p>
             </div>
             <div class="row pt-45">
@@ -183,7 +183,7 @@
                 <div class="col-lg-6">
                     <div class="call-contact">
                         <h3 class="pb-2">Acompanhe seu consumo pelo nosso Aplicativo</h3>
-                        <p>O nosso aplicativo AcquaXcontrol é simples de mexer e prático, você consegue acompanhar o seu
+                        <p>O nosso aplicativo Medição Digital é simples de mexer e prático, você consegue acompanhar o seu
                             consumo em tempo real na palma da sua mão, além de ter acesso a comparativos dos meses
                             anteriores e gerar demonstrativos sempre que precisar.</p>
                     </div>
@@ -318,7 +318,7 @@
             </div>
         </div>
     </div>
-
+    {{--
     <section class="services-area-four pt-100 pb-70">
         <div class="container">
             <div class="section-title text-center">
@@ -347,7 +347,7 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
 @endsection
 
 @section('custom_js')

@@ -135,12 +135,12 @@
         </div>
     </div>
 
-    <div class="map-area">
+    {{-- <div class="map-area">
         <div class="container-fluid m-0 p-0">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7630972.04234676!2d-37.8365769!3d-20.9500827!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0b76eff605f82b8!2sGrupo%20Acqua%20X%20do%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1662162821171!5m2!1spt-BR!2sbr"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade" title="Nossa localização"></iframe>
         </div>
-    </div>
+    </div> --}}
 @endsection

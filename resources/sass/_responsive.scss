@@ -889,7 +889,13 @@
         left: 0;
         -webkit-animation: none;
         animation: none;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#0071dc), to(#070b3b));
+        background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#0071dc),
+            to(#070b3b)
+        );
         background-image: linear-gradient(#0071dc, #070b3b);
     }
     .clients-slider-content {
@@ -1636,7 +1642,13 @@
         left: 0;
         -webkit-animation: none;
         animation: none;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#0071dc), to(#070b3b));
+        background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#0071dc),
+            to(#070b3b)
+        );
         background-image: linear-gradient(#0071dc, #070b3b);
     }
     .clients-slider-content {

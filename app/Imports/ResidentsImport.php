@@ -27,7 +27,7 @@ class ResidentsImport implements ToModel, WithHeadingRow
         $blocks = Block::where('complex_id', $complex->id)->pluck('id');
         $apartments = Apartment::whereIn('block_id', $blocks)->get();
         foreach ($apartments as $ap) {
-            $email = Str::slug($ap->complex_name . $ap->block_name . $ap->name) . '@acquax.com.br';
+            $email = Str::slug($ap->complex_name . $ap->block_name . $ap->name) . '@medicaodigital.com.br';
             $user = User::where('email', $email)->first();
             if (empty($user->id)) {
                 $newUser = User::create([
