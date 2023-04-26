@@ -235,28 +235,28 @@ Route::group(['middleware' => ['log']], function () {
         /** Home */
         Route::get('/', [HomeController::class, 'index'])->name('home');
 
-        /** Services */
-        /** Air Block */
-        Route::get('/servicos/bloqueador-de-ar', [ServiceController::class, 'airBlock'])->name('service.airBlock');
-        /** Anti Suction Device */
-        Route::get('/servicos/dispositivo-anti-succao', [ServiceController::class, 'antiSuctionDevice'])->name('service.antiSuctionDevice');
-        /** Water Individualization */
-        Route::get('/servicos/individualizacao-de-agua', [ServiceController::class, 'waterIndividualization'])->name('service.waterIndividualization');
-        /** Pump Maintenance */
-        Route::get('/servicos/manutencao-de-bomba', [ServiceController::class, 'pumpMaintenance'])->name('service.pumpMaintenance');
-        /** Hydrometer Measurement */
-        Route::get('/servicos/medicao-de-hidrometro', [ServiceController::class, 'hydrometerMeasurement'])->name('service.hydrometerMeasurement');
+        // /** Services */
+        // /** Air Block */
+        // Route::get('/servicos/bloqueador-de-ar', [ServiceController::class, 'airBlock'])->name('service.airBlock');
+        // /** Anti Suction Device */
+        // Route::get('/servicos/dispositivo-anti-succao', [ServiceController::class, 'antiSuctionDevice'])->name('service.antiSuctionDevice');
+        // /** Water Individualization */
+        // Route::get('/servicos/individualizacao-de-agua', [ServiceController::class, 'waterIndividualization'])->name('service.waterIndividualization');
+        // /** Pump Maintenance */
+        // Route::get('/servicos/manutencao-de-bomba', [ServiceController::class, 'pumpMaintenance'])->name('service.pumpMaintenance');
+        // /** Hydrometer Measurement */
+        // Route::get('/servicos/medicao-de-hidrometro', [ServiceController::class, 'hydrometerMeasurement'])->name('service.hydrometerMeasurement');
 
-        /** Blog */
-        Route::get('/blog/{slug}', [SitePostController::class, 'post'])->name('post');
-        Route::get('/blog', [SitePostController::class, 'index'])->name('posts');
+        // /** Blog */
+        // Route::get('/blog/{slug}', [SitePostController::class, 'post'])->name('post');
+        // Route::get('/blog', [SitePostController::class, 'index'])->name('posts');
 
-        /** Contact */
-        Route::get('/contato', [ContactController::class, 'index'])->name('contact');
-        Route::post('/sendEmail', [ContactController::class, 'sendEmail'])->name('sendEmail');
+        // /** Contact */
+        // Route::get('/contato', [ContactController::class, 'index'])->name('contact');
+        // Route::post('/sendEmail', [ContactController::class, 'sendEmail'])->name('sendEmail');
 
-        /** Police */
-        Route::get('/politica-de-privacidade', [PoliceController::class, 'index'])->name('police');
+        // /** Police */
+        // Route::get('/politica-de-privacidade', [PoliceController::class, 'index'])->name('police');
     });
 
     Auth::routes([
