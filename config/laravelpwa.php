@@ -7,7 +7,7 @@ return [
         'short_name' => env('APP_SHORT_NAME'),
         'start_url' => '/login',
         'background_color' => '#ffffff',
-        'theme_color' => '#6777ef',
+        'theme_color' => '#062174',
         'display' => 'standalone',
         'orientation' => 'any',
         'status_bar' => 'black',
